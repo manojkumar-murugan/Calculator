@@ -1,0 +1,89 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Basic Calculator
+        </title>
+        <script src="script.js"></script>
+    </head>
+    <body onload="wrapper();">
+        <div class="calculator">
+        <h2 style="align-items: center;">Calculator</h2>
+        <div class="calculator__display">0</div>
+        <div class="calculator__keys">
+            <table class="center">
+                <tr>
+                    <td>
+                        <button data-action="clear">AC</button>
+                    </td>
+                    <td>
+                        <button class="key--operator" data-action="negate">+/-</button>
+                    </td>
+                    <td>
+                        <button class="key--operator" data-action="modulo">%</button>
+                    </td>
+                    <td>
+                        <button class="key--operator" data-action="divide">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>7</button>
+                    </td>
+                    <td>
+                        <button>8</button>
+                    </td>
+                    <td>
+                        <button>9</button>
+                    </td>
+                    <td>
+                        <button class="key--operator" data-action="multiply">X</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>4</button>
+                    </td>
+                    <td>
+                        <button>5</button>
+                    </td>
+                    <td>
+                        <button>6</button>
+                    </td>
+                    <td>
+                        <button class="key--operator" data-action="subtract">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>1</button>
+                    </td>
+                    <td>
+                        <button>2</button>
+                    </td>
+                    <td>
+                        <button>3</button>
+                    </td>
+                    <td>
+                        <button class="key--operator" data-action="add">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>0</button>
+                    </td>
+                    <td>
+                        <button data-action="decimal">.</button>
+                    </td>
+                    <td>
+                        <button class="key--equal" data-action="calculate">=</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </body>
+</html>

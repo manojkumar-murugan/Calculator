@@ -95,6 +95,6 @@ function wrapper(){
         } else if (operator === 'modulo') {
             result = parseFloat(n1)%parseFloat(n2)
         }
-        return result.toFixed(2)
+        return Number.isInteger(result)?result:result.toFixed(2)
     }
 }
